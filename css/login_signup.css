@@ -1,0 +1,114 @@
+$purple: #7219d6;
+$white: #f7f7f7;
+$grey_white: #f2f2f2;
+$grey: #999;
+$font: "Poppins";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+.shadow{
+    background-color: $white;
+    box-shadow: 
+        8px 8px 13px 0 rgba(0, 0, 0, 0.06),
+        -8px -8px 10px 0 rgba(255, 255, 255, 1);
+}
+body{
+    background-color: $purple;
+    font-family: $font;
+    width: 360px;
+    margin: 15px auto;
+    border-radius: 15px;
+    header{
+        height: 195px;
+        background-color: $purple;
+        border-radius: 15px 15px 0 0;
+      
+        .header-text{
+            width: 80%;
+            margin: 30px 0 0 10px;
+            font-size: 26px;
+            color: #fff;
+        }
+    }
+    main{
+        background-color: $white;
+        border-radius: 25px;
+        padding: 20px;
+        .form-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            .form-line{
+                width: 100%;
+                flex-basis: 100%;
+                label{
+                    color: $grey;
+                    font-size: 14px;
+                    padding-left: 8px;
+                }
+                input, ::placeholder{
+                    font-family: $font;
+                }
+                input.input-data{
+                    border: none;
+                    border-radius: 15px;
+                    padding: 14px 8px;
+                    margin: 10px 0;
+                    width: 95%;
+                }
+                input[type="submit"]{
+                    background-color: $purple;
+                    border: none;
+                    padding: 10px 65px;
+                    border-radius: 20px;
+                    color: $white;
+                    font-size: 18px;
+                }
+            }
+            .form-line.login{
+                display: flex;
+                justify-content: center;
+                margin: 20px 0;
+            }
+        }
+        p{
+            text-align: center;
+        }
+        .login-socials{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+            p{
+                flex-basis: 100%;
+            }
+            i{
+                font-size: 22px;
+                padding: 14px 16px;
+                min-width: 20px;
+                margin: 10px;
+                border-radius: 10px;
+                text-align: center;
+                color: $purple;
+            }
+        }
+    }
+}
